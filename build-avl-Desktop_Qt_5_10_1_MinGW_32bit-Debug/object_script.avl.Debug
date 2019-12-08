@@ -1,0 +1,16 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\AVL.o
+./debug\ChildAVL.o
+./debug\file.o
+./debug\dialog.o
+./debug\apply_user.o
+./debug\apply_hobby.o
+./debug\apply_random.o
+./debug\apply_specialfunction.o
+./debug\set.o
+./debug\apply_relation.o
+./debug\moc_mainwindow.o
+./debug\moc_dialog.o
+);

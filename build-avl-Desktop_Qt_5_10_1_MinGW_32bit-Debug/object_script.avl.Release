@@ -1,0 +1,16 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\AVL.o
+./release\ChildAVL.o
+./release\file.o
+./release\dialog.o
+./release\apply_user.o
+./release\apply_hobby.o
+./release\apply_random.o
+./release\apply_specialfunction.o
+./release\set.o
+./release\apply_relation.o
+./release\moc_mainwindow.o
+./release\moc_dialog.o
+);

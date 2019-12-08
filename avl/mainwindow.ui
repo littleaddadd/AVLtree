@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>基于AVL树表示的集合ADT实现与应用_谢添</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <layout class="QGridLayout" name="gridLayout"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout" stretch="6,2,1">
+        <item>
+         <widget class="QTextBrowser" name="textBrowser">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>350</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei</family>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_4" stretch="1,0">
+          <item>
+           <layout class="QGridLayout" name="gridLayout_3">
+            <item row="1" column="1">
+             <widget class="QLineEdit" name="input2">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Microsoft YaHei</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QComboBox" name="comboBox">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Microsoft YaHei</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label3">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Microsoft YaHei</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>TextLabel</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLineEdit" name="input3">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Microsoft YaHei</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLineEdit" name="input1">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Microsoft YaHei</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QComboBox" name="comboBox_1">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Microsoft YaHei</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label1">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Microsoft YaHei</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>TextLabel</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label2">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Microsoft YaHei</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>TextLabel</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label4">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Microsoft YaHei</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>TextLabel</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="label5">
+              <property name="font">
+               <font>
+                <family>Microsoft YaHei</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>TextLabel</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>15</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="button_save">
+            <property name="font">
+             <font>
+              <family>Microsoft YaHei</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>应用数据保存快捷键</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="button_ok">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Microsoft YaHei</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>确认</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="button_exit">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Microsoft YaHei</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>退出</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_user">
+    <property name="title">
+     <string>用户</string>
+    </property>
+    <addaction name="action_insert"/>
+    <addaction name="action_remove"/>
+    <addaction name="action_modify"/>
+    <addaction name="action_member"/>
+    <addaction name="action_size"/>
+    <addaction name="action_traverse"/>
+   </widget>
+   <widget class="QMenu" name="menu_relation">
+    <property name="title">
+     <string>社交</string>
+    </property>
+    <addaction name="action_relationreset"/>
+    <addaction name="action_relationinsert"/>
+    <addaction name="action_relationremove"/>
+    <addaction name="action_relationmodify"/>
+    <addaction name="action_relationmember"/>
+    <addaction name="action_relationtraverse"/>
+   </widget>
+   <widget class="QMenu" name="menu_hobby">
+    <property name="title">
+     <string>爱好</string>
+    </property>
+    <addaction name="action_hobbyreset"/>
+    <addaction name="action_hobbyinsert"/>
+    <addaction name="action_hobbyremove"/>
+    <addaction name="action_hobbymodify"/>
+    <addaction name="action_hobbymember"/>
+    <addaction name="action_hobbytraverse"/>
+   </widget>
+   <widget class="QMenu" name="menu_search">
+    <property name="title">
+     <string>特殊查询</string>
+    </property>
+    <addaction name="bothfollow"/>
+    <addaction name="bothhobby"/>
+    <addaction name="twodegreefriend"/>
+   </widget>
+   <widget class="QMenu" name="menu_random">
+    <property name="title">
+     <string>随机生成</string>
+    </property>
+    <addaction name="random"/>
+   </widget>
+   <widget class="QMenu" name="menu_file">
+    <property name="title">
+     <string>文件存储</string>
+    </property>
+    <addaction name="saveset"/>
+    <addaction name="readset"/>
+    <addaction name="saveapply"/>
+    <addaction name="readapply"/>
+    <addaction name="readapplybackup"/>
+    <addaction name="saveapplybackup"/>
+   </widget>
+   <widget class="QMenu" name="menu_system">
+    <property name="title">
+     <string>系统</string>
+    </property>
+    <addaction name="action_init"/>
+    <addaction name="action_destroy"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>集合运算</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="set_init"/>
+    <addaction name="set_destroy"/>
+    <addaction name="set_insert"/>
+    <addaction name="set_remove"/>
+    <addaction name="set_intersection"/>
+    <addaction name="set_union"/>
+    <addaction name="set_difference"/>
+    <addaction name="set_size"/>
+    <addaction name="set_member"/>
+    <addaction name="set_subset"/>
+    <addaction name="set_equal"/>
+    <addaction name="actionhigh"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_system"/>
+   <addaction name="menu_user"/>
+   <addaction name="menu_relation"/>
+   <addaction name="menu_hobby"/>
+   <addaction name="menu_search"/>
+   <addaction name="menu_random"/>
+   <addaction name="menu_file"/>
+  </widget>
+  <action name="action_insert">
+   <property name="text">
+    <string>添加用户</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+  </action>
+  <action name="action_member">
+   <property name="text">
+    <string>查找用户</string>
+   </property>
+  </action>
+  <action name="action_remove">
+   <property name="text">
+    <string>删除用户</string>
+   </property>
+  </action>
+  <action name="action_modify">
+   <property name="text">
+    <string>修改用户</string>
+   </property>
+  </action>
+  <action name="action_init">
+   <property name="text">
+    <string>初始化系统</string>
+   </property>
+  </action>
+  <action name="action_destroy">
+   <property name="text">
+    <string>销毁系统</string>
+   </property>
+  </action>
+  <action name="action_size">
+   <property name="text">
+    <string>当前用户数</string>
+   </property>
+  </action>
+  <action name="action_traverse">
+   <property name="text">
+    <string>遍历所有用户</string>
+   </property>
+  </action>
+  <action name="action_relationinsert">
+   <property name="text">
+    <string>添加用户的社交</string>
+   </property>
+  </action>
+  <action name="action_relationremove">
+   <property name="text">
+    <string>删除用户的社交</string>
+   </property>
+  </action>
+  <action name="action_relationmodify">
+   <property name="text">
+    <string>修改用户的社交</string>
+   </property>
+  </action>
+  <action name="action_relationmember">
+   <property name="text">
+    <string>查询用户的社交</string>
+   </property>
+  </action>
+  <action name="action_relationtraverse">
+   <property name="text">
+    <string>遍历用户的社交</string>
+   </property>
+  </action>
+  <action name="action_relationreset">
+   <property name="text">
+    <string>重置用户的社交</string>
+   </property>
+  </action>
+  <action name="action_hobbyinsert">
+   <property name="text">
+    <string>添加用户的爱好</string>
+   </property>
+  </action>
+  <action name="action_hobbyremove">
+   <property name="text">
+    <string>删除用户的爱好</string>
+   </property>
+  </action>
+  <action name="action_hobbymodify">
+   <property name="text">
+    <string>修改用户的爱好</string>
+   </property>
+  </action>
+  <action name="action_hobbymember">
+   <property name="text">
+    <string>查询用户的爱好</string>
+   </property>
+  </action>
+  <action name="action_hobbytraverse">
+   <property name="text">
+    <string>遍历用户的爱好</string>
+   </property>
+  </action>
+  <action name="action_hobbyreset">
+   <property name="text">
+    <string>清空用户的爱好</string>
+   </property>
+  </action>
+  <action name="bothfollow">
+   <property name="text">
+    <string>共同关注查询</string>
+   </property>
+  </action>
+  <action name="bothhobby">
+   <property name="text">
+    <string>共同喜好查询</string>
+   </property>
+  </action>
+  <action name="twodegreefriend">
+   <property name="text">
+    <string>二度好友查询</string>
+   </property>
+  </action>
+  <action name="random">
+   <property name="text">
+    <string>随机生成数据</string>
+   </property>
+  </action>
+  <action name="readapplybackup">
+   <property name="text">
+    <string>应用备份读取</string>
+   </property>
+  </action>
+  <action name="saveapplybackup">
+   <property name="text">
+    <string>应用备份保存</string>
+   </property>
+  </action>
+  <action name="bothfriend">
+   <property name="text">
+    <string>共同好友查询</string>
+   </property>
+  </action>
+  <action name="bothfollower">
+   <property name="text">
+    <string>共同粉丝查询</string>
+   </property>
+  </action>
+  <action name="actionhigh">
+   <property name="text">
+    <string>high</string>
+   </property>
+  </action>
+  <action name="set_insert">
+   <property name="text">
+    <string>set_insert</string>
+   </property>
+  </action>
+  <action name="set_destroy">
+   <property name="text">
+    <string>set_destroy</string>
+   </property>
+  </action>
+  <action name="set_remove">
+   <property name="text">
+    <string>set_remove</string>
+   </property>
+  </action>
+  <action name="set_init">
+   <property name="text">
+    <string>set_init</string>
+   </property>
+  </action>
+  <action name="set_union">
+   <property name="text">
+    <string>set_union</string>
+   </property>
+  </action>
+  <action name="set_intersection">
+   <property name="text">
+    <string>set_intersection</string>
+   </property>
+  </action>
+  <action name="set_difference">
+   <property name="text">
+    <string>set_difference</string>
+   </property>
+  </action>
+  <action name="set_size">
+   <property name="text">
+    <string>set_size</string>
+   </property>
+  </action>
+  <action name="set_member">
+   <property name="text">
+    <string>set_member</string>
+   </property>
+  </action>
+  <action name="set_subset">
+   <property name="text">
+    <string>set_subset</string>
+   </property>
+  </action>
+  <action name="set_equal">
+   <property name="text">
+    <string>set_equal</string>
+   </property>
+  </action>
+  <action name="saveset">
+   <property name="text">
+    <string>集合保存</string>
+   </property>
+  </action>
+  <action name="readset">
+   <property name="text">
+    <string>集合读取</string>
+   </property>
+  </action>
+  <action name="saveapply">
+   <property name="text">
+    <string>默认保存</string>
+   </property>
+  </action>
+  <action name="readapply">
+   <property name="text">
+    <string>默认读取</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>button_exit</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>84</x>
+     <y>145</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>187</x>
+     <y>98</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,12 @@
+﻿key,1
+name,a
+friend,key,2,名,谢添
+follow,key,2,名,谢添
+follower,key,2,名,谢添
+hobby,key,0,名,篮球
+key,2
+name,谢添
+friend,key,1,名,a
+follow,key,1,名,a
+follower,key,1,名,a
+hobby,key,0,名,乒乓球
